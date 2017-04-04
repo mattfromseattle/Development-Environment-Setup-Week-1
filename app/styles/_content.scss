@@ -1,0 +1,25 @@
+body {
+    color: $text-color;
+    font-family: $font-family-sans-serif;
+}
+
+.marketing {
+    a {
+        color: $brand-warning;
+    }
+    a:hover {
+        color: $link-hover-color;
+    }
+    p {
+        color: $brand-primary;
+    }
+    background-color: $gray-lighter;
+    @include border-top-radius(10px);
+    @include border-bottom-radius(10px);
+    width: 100%;
+}
+
+.container .jumbotron {
+    @include border-top-radius(10px);
+    @include border-bottom-radius(10px);
+}

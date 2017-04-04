@@ -1,8 +1,17 @@
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
+
+// Override Bootstrap variables
+@import "variables";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Site-specific stylesheets
+// Add additional stylesheets below
+@import "content";
+@import "buttons";
+@import "breakpoints";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -58,18 +67,10 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-    background-image: linear-gradient(20deg,grey, white); 
   background-size: contain;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
-  }
-    h1{
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
   }
 }
 
